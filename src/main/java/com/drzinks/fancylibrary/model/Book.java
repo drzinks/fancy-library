@@ -1,4 +1,4 @@
-package com.drzinks.model;
+package com.drzinks.fancylibrary.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -17,12 +17,11 @@ public class Book {
     private final String author;
     private final long id;
 
-    public Book(String title, int year, String author) {
+    Book(String title, int year, String author) {
         this.title = title;
         this.year = year;
         this.author = author;
         this.id = currentId + 1;
     }
-
 
 }
